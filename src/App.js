@@ -100,7 +100,7 @@ const App = () => {
             </li>
           ))}
         </ul>
-        <p>Total Cost: ${getTotalCost()}</p>
+        <p>Total Cost: <span style={{fontFamily:"Arial"}}>&#8377;</span>{getTotalCost()}</p>
       </div>
     </div>
   );
