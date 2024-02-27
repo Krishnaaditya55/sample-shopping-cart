@@ -81,7 +81,8 @@ const App = () => {
                 onChange={() => handleItemCheck(item.id)}
                 checked={selectedItems.includes(item.id)}
               />
-              {item.name} - ${item.price}
+              {item.name} - <span style={{fontFamily:"Arial"}}>&#8377;</span>
+{item.price}
             </li>
           ))}
         </ul>
@@ -92,7 +93,7 @@ const App = () => {
         <ul>
           {cart.map((item) => (
             <li key={item.id}>
-              {item.name} - ${item.price} x {item.quantity}{' '}
+              {item.name} - <span style={{fontFamily:"Arial"}}>&#8377;</span>{item.price} x {item.quantity}{' '}
               <button onClick={() => handleIncrease(item.id)}>+</button>
               <button onClick={() => handleDecrease(item.id)}>-</button>
               <button onClick={() => handleRemove(item.id)}>Remove</button>
